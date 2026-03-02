@@ -24,7 +24,7 @@ class ConversionsTest {
 	    assertEquals(0.0, conv.euroToDollar(0.0), 0.01);
 	}
 	
-	//Second test to convert from dollar to euro method that should fail
+	//Second test to convert from dollar to euro method that should succeed
 	@Test
 	public void testDollarToEuro() {
 	    Conversions conv = new Conversions();
