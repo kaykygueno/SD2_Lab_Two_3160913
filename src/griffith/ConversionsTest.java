@@ -17,7 +17,7 @@ class ConversionsTest {
 	    // Test larger positive
 	    assertEquals(108.0, conv.euroToDollar(100.0), 0.01);
 
-	    // Test negative 
+	    // Test negative
 	    assertEquals(-1.08, conv.euroToDollar(-1.0), 0.01);
 
 	    // Test zero

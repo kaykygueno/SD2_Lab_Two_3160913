@@ -5,7 +5,7 @@ public class Conversions {
 	//Adding stubs methods each specific to the test cases in ConversionsTest.java
 	
     public double euroToDollar(double euro) {
-        return 0.0;
+        return euro * 1.08;
     }
 
     public double dollarToEuro(double dollar) {
@@ -23,4 +23,5 @@ public class Conversions {
     public String switchCase(String val) {
         return null;
     }
+    
 }
