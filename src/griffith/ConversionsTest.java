@@ -41,4 +41,23 @@ class ConversionsTest {
 	    // Test zero
 	    assertEquals(0.0, conv.dollarToEuro(0.0), 0.01);
 	}
+	
+	//Third test to convert from string to integer method that should fail
+	@Test
+	public void testStringToInteger() {
+	    Conversions conv = new Conversions();
+
+	    // Test positive string
+	    assertEquals(123, conv.stringToInteger("123"));
+
+	    // Test negative string
+	    assertEquals(-50, conv.stringToInteger("-50"));
+
+	    // Test string 0
+	    assertEquals(0, conv.stringToInteger("0"));
+
+	    // Test string with non-numeric characters
+	    assertEquals(0, conv.stringToInteger(null));
+	    assertEquals(0, conv.stringToInteger(""));
+	}
 }
