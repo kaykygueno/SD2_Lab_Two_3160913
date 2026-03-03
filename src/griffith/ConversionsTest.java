@@ -76,7 +76,7 @@ class ConversionsTest {
 	    assertEquals("0", conv.integerToString(0));
 	}
 	
-	//Fifth test to switch the case of the string method that should fail
+	//Fifth test to switch the case of the string method that should succeed
 	@Test
 	public void testSwitchCase() {
 	    Conversions conv = new Conversions();

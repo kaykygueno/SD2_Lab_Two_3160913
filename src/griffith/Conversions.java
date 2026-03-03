@@ -30,9 +30,29 @@ public class Conversions {
     public String integerToString(int val) {
     	return String.valueOf(val);
     }
-
+    
+    //Switch the case of each character in the string, return null if the input string is null
     public String switchCase(String val) {
-        return null;
+    	if (val == null) {
+            return null;
+        }
+        
+        StringBuilder result = new StringBuilder();
+        
+        for (int i = 0; i < val.length(); i++) {
+            char c = val.charAt(i);
+            
+            if (Character.isUpperCase(c)) {
+                result.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                result.append(Character.toUpperCase(c));
+            } else {
+                result.append(c); 
+            }
+        }
+        
+        return result.toString();
+    
     }
     
 }
