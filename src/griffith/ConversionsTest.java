@@ -75,4 +75,23 @@ class ConversionsTest {
 	    // Test 0
 	    assertEquals("0", conv.integerToString(0));
 	}
+	
+	//Fifth test to switch the case of the string method that should fail
+	@Test
+	public void testSwitchCase() {
+	    Conversions conv = new Conversions();
+
+	    // Test Abc to aBC
+	    assertEquals("aBC", conv.switchCase("Abc"));
+
+	    // Test all caps
+	    assertEquals("java", conv.switchCase("JAVA"));
+
+	    // Test all lowercase
+	    assertEquals("HELLO", conv.switchCase("hello"));
+
+	    // Test null
+	    assertNull(conv.switchCase(null));
+	    assertEquals("", conv.switchCase(""));
+	}
 }
