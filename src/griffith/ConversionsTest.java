@@ -61,7 +61,7 @@ class ConversionsTest {
 	    assertEquals(0, conv.stringToInteger(""));
 	}
 	
-	//Fourth test to convert from integer to string method that should fail first
+	//Fourth test to convert from integer to string method that should succeed
 	@Test
 	public void testIntegerToString() {
 	    Conversions conv = new Conversions();

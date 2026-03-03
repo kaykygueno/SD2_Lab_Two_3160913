@@ -25,9 +25,10 @@ public class Conversions {
             return 0;
         }
     }
-
+    
+    //Convert the integer to a string using String.valueOf
     public String integerToString(int val) {
-        return null; 
+    	return String.valueOf(val);
     }
 
     public String switchCase(String val) {
