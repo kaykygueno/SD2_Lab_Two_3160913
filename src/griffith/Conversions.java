@@ -9,7 +9,7 @@ public class Conversions {
         return euro * 1.08;
     }
 
-    //Divide the dollar value by 1.08 to convert to euros
+    //Divide the dollar value by 1.08 to convert to euro
     public double dollarToEuro(double dollar) {
         return dollar / 1.08;
     }
